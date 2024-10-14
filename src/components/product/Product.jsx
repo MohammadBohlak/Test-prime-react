@@ -16,7 +16,7 @@ export default function Product({ data }) {
   const footer = (<div className="flex justify-content-between align-items-center h-3rem">
     <Button label = "Buy" className="bg-teal-900 text-lg w-5 text-color" icon = "pi pi-shopping-cart" onClick={() => setShowBuy(true)}/>
     <Button label="Show details"  className="w-5" icon="pi pi-external-link" onClick={() => setVisible(true)} />
-            <Dialog header="Header" visible={visible} maximizable style={{ width: '50vw' ,height:"40vh", overflowY:"auto" }} onHide={() => {if (!visible) return; setVisible(false); }}>
+            <Dialog header="Details" visible={visible} maximizable style={{ width: '50vw' ,height:"40vh", overflowY:"auto" }} onHide={() => {if (!visible) return; setVisible(false); }}>
                 <p className="m-0">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
